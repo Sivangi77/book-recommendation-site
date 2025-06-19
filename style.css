@@ -29,7 +29,7 @@ header{
     position: fixed;
     width: 100%;
     z-index: 5;
-    background-color: #3b141c;
+    background-color: #00303f;
 }
 header .navbar{
     display: flex;
@@ -54,7 +54,7 @@ header .navbar{
     transition: 0.3s ease;
 }
 .navbar .nav-menu .nav-link:hover{
-    color: #3b141c;
+    color: #00303f;
     background: #f3961c;
 }
 .navbar :where(#menu-close-button, #menu-open-button){
@@ -63,7 +63,7 @@ header .navbar{
 /* hero section */
 .hero-section{
     min-height: 100vh;
-    background: #3b141c;
+    background: #00303f;
 }
 .hero-section .section-content{
     display: flex;
@@ -95,7 +95,7 @@ header .navbar{
 .hero-section .hero-details .button{
     padding: 10px 26px;
     border: 2px solid transparent;
-    color: #3b141c;
+    color: #00303f;
     border-radius: 30px;
     background: #f3961c;
     font-weight: 500;
@@ -108,7 +108,7 @@ header .navbar{
     background: transparent;
 }
 .hero-section .hero-details .learn-more:hover{
-    color: #3b141c;
+    color: #00303f;
     border-color: #f3961c;
     background: #f3961c;
 }
@@ -157,12 +157,47 @@ header .navbar{
     justify-content: center;
 }
 .about-section .social-link-list .social-link{
-    color: #3b141c;
+    color: #00303f;
     font-size: 1.5rem;
     transition: 0.2s ease;
 }
 .about-section .social-link-list .social-link:hover{
     color: #f3961c;
+}
+/*Explore Books Section */
+.books-section{
+    color: #fff;
+    background: #6d7993;
+    padding: 50px 0 100px;
+}
+.books-section .books-list{
+    display: flex;
+    gap: 110px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.books-section .books-list .books-name{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    width: calc(100% / 3 - 110px);
+}
+.books-section .books-list .books-name .books-image{
+    max-width: 83%;
+    aspect-ratio: 1;
+    margin-bottom: 15px;
+    object-fit: contain;
+}
+.books-section .books-list .books-name .name{
+    margin: 12px 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.books-section .books-list .books-name .text{
+    font-size: 1.12rem;
 }
 /* responsive code for max width 900 px */
 @media screen and (max-width: 900px){
@@ -196,7 +231,7 @@ header .navbar{
         left: 0;
     } 
     .navbar .nav-menu .nav-link{
-        color: #252525;
+        color: #6d7993;
         display: block;
         margin-top: 17px;
         font-size: 1rem;
@@ -227,5 +262,17 @@ header .navbar{
         height: 100%;
         max-width: 250px;
         aspect-ratio: 1;
+     }
+     .books-section .books-list .books-name .text{
+        font-size: 1rem;
+    }
+     .books-section .books-list{
+        gap: 60px;
+     }
+     .books-section .books-list .books-name{
+        width: 100%;
+     }
+    .books-section .books-list .books-name .books-image{
+        max-width: 200px;
      }
 }
